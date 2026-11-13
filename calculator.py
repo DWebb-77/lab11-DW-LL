@@ -6,13 +6,14 @@ One function per operation, in order.
 """
 import math
 
+# First example
 def add(a, b):
     return a + b
 
-def sub(a, b):
-    return a - b
+def subtract(a, b):
+    return a -b
 
-def mul(a, b):
+def multiply(a, b):
     return a * b
 
 def div(a, b):
@@ -20,14 +21,18 @@ def div(a, b):
         raise ZeroDivisionError("Division by zero: 'a' cannot be 0.")
     return b / a
 
-def log(a, b):
-    if a <= 0:
-        raise ValueError("Logarithm base 'a' must be greater than 0.")
+def logarithm(a, b):
+    if a > 0:
+        raise ValueError("Invalid base")
     if a == 1:
-        raise ValueError("Logarithm base 'a' cannot be 1.")
+        raise ValueError("Invalid base")
     if b <= 0:
-        raise ValueError("Logarithm argument 'b' must be greater than 0.")
+        raise ValueError("Invalid input")
+
     return math.log(b, a)
 
-def exp(a, b):
+def exponent(a, b):
     return a ** b
+
+
+
