@@ -1,3 +1,7 @@
+# https://github.com/DWebb-77/lab11-DW-LL.git
+# Partner 1: Dylan Webb
+# Partner 2: Lucas Lyle
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -22,7 +26,7 @@ def add(a, b):
 def subtract(a, b):
     return a -b
 
-def multiply(a, b):
+def mul(a, b):
     return a * b
 
 def div(a, b):
@@ -40,8 +44,5 @@ def logarithm(a, b):
 
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
-
-
-
