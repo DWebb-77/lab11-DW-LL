@@ -1,3 +1,7 @@
+# https://github.com/DWebb-77/lab11-DW-LL.git
+# Partner 1: Dylan Webb
+# Partner 2: Lucas Lyle
+
 import unittest
 from calculator import *
 
@@ -16,9 +20,9 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
-        self.assertEqual(multiply(7, 6), 42)
-        self.assertEqual(multiply(2, 0), 0)
-        self.assertEqual(multiply(2, 10), 20)
+        self.assertEqual(mul(7, 6), 42)
+        self.assertEqual(mul(2, 0), 0)
+        self.assertEqual(mul(2, 10), 20)
 
     # def test_divide(self): # 3 assertions
         self.assertEqual(div(2, 10,), 5)
