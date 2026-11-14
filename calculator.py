@@ -35,7 +35,7 @@ def div(a, b):
     return b / a
 
 def logarithm(a, b):
-    if a > 0:
+    if a < 0:
         raise ValueError("Invalid base")
     if a == 1:
         raise ValueError("Invalid base")
